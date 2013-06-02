@@ -12,6 +12,10 @@ typedef NS_ENUM(int, KNSPin) {
     kKNSPin_PIO5 = 5,
     kKNSPin_PIO6 = 6,
     kKNSPin_PIO7 = 7,
+
+    kKNSPin_AIO0 = 0,
+    kKNSPin_AIO1 = 1,
+    kKNSPin_AIO2 = 2,
 };
 
 typedef NS_ENUM(int, KNSHighLow) {

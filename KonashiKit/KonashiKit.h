@@ -2,3 +2,4 @@
 #import "KNSDefines.h"
 #import "KNSDigitalOut.h"
 #import "KNSDigitalIn.h"
+#import "KNSAnalogueIn.h"
