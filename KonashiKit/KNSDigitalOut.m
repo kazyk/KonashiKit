@@ -7,26 +7,15 @@
 #import "Konashi.h"
 
 
-@interface KNSDigitalOut()
-@property (readonly, nonatomic) KNSPin pin;
-@end
-
 @implementation KNSDigitalOut
 
-- (instancetype)initWithPin:(KNSPin)pin
+- (KNSIO *)initWithPin:(KNSPin)pin
 {
-    self = [super init];
+    self = [super initWithPin:pin];
     if (self) {
-        _pin = pin;
         [Konashi pinMode:pin mode:OUTPUT];
     }
     return self;
-}
-
-- (id)init
-{
-    NSAssert(NO, @"invalid initializer");
-    return nil;
 }
 
 - (void)write:(KNSHighLow)val

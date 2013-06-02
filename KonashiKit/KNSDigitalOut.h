@@ -4,12 +4,10 @@
 
 
 #import <Foundation/Foundation.h>
-#import "KNSDefines.h"
+#import "KNSIO.h"
 
 
-@interface KNSDigitalOut : NSObject
-
-- (instancetype)initWithPin:(KNSPin)pin;
+@interface KNSDigitalOut : KNSIO
 
 - (void)write:(KNSHighLow)val;
 

@@ -13,6 +13,8 @@
 		19DE43D445F71F5D3C88FE56 /* KNSDigitalOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4DE8BA7A931810191F9F /* KNSDigitalOut.m */; };
 		19DE4458963D662967A9C1C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19DE406048996CB0FA6F8013 /* InfoPlist.strings */; };
 		19DE44925FA31E0CD8BBAEA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DE418E49B7DDDBF5406927 /* AppDelegate.m */; };
+		19DE45D40A51A612F6544966 /* KNSIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DE493D3734D4F526F48BF7 /* KNSIO.m */; };
+		19DE46C6EA885CF6B20A028C /* KNSDigitalIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4B49A1F79785DB6EAA5F /* KNSDigitalIn.m */; };
 		19DE476A2007263807A9EA0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4FC007E5B544910EE59F /* main.m */; };
 		19DE48219AB9BB88C72CD992 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19DE483BAE6EB1BB5A65715D /* Default@2x.png */; };
 		19DE488FAB86E0FDA1200B0F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19DE43CB7F661919414FCCA1 /* Default-568h@2x.png */; };
@@ -25,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19DE407401A1C0E68D0E64F8 /* KNSIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSIO.h; sourceTree = "<group>"; };
 		19DE407E4A651B8E2D9C6E9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19DE40B55BEDA01F336FFE2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		19DE418E49B7DDDBF5406927 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,13 +40,16 @@
 		19DE451A0A8150B9283B5190 /* KNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNS.h; sourceTree = "<group>"; };
 		19DE4540C01F335C48C18A2C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		19DE45A5710E8DF90A878C26 /* Sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sample-Prefix.pch"; sourceTree = "<group>"; };
+		19DE46FD1CF62354940A3A9D /* KNSDigitalIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSDigitalIn.h; sourceTree = "<group>"; };
 		19DE472214347CACB9285A26 /* KNSDigitalOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSDigitalOut.h; sourceTree = "<group>"; };
 		19DE483BAE6EB1BB5A65715D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		19DE493D3734D4F526F48BF7 /* KNSIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSIO.m; sourceTree = "<group>"; };
 		19DE49DD35B7997A748F7F69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		19DE4A200BB633B400BD5A44 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		19DE4B1DEBC7D64CBDE3074C /* KNSDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSDefines.h; sourceTree = "<group>"; };
 		19DE4B204631C1D9D678B443 /* Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konashi.h; sourceTree = "<group>"; };
 		19DE4B2B9A67221CA4B2057C /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DE4B49A1F79785DB6EAA5F /* KNSDigitalIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSDigitalIn.m; sourceTree = "<group>"; };
 		19DE4BDA2D67ADC231F03DED /* KonashiDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiDb.h; sourceTree = "<group>"; };
 		19DE4C74C837F48EDD85A63A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19DE4D5779AF8F546749078A /* KonashiKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiKit.h; sourceTree = "<group>"; };
@@ -125,6 +131,10 @@
 				19DE472214347CACB9285A26 /* KNSDigitalOut.h */,
 				19DE4B1DEBC7D64CBDE3074C /* KNSDefines.h */,
 				19DE4D5779AF8F546749078A /* KonashiKit.h */,
+				19DE4B49A1F79785DB6EAA5F /* KNSDigitalIn.m */,
+				19DE46FD1CF62354940A3A9D /* KNSDigitalIn.h */,
+				19DE493D3734D4F526F48BF7 /* KNSIO.m */,
+				19DE407401A1C0E68D0E64F8 /* KNSIO.h */,
 			);
 			path = KonashiKit;
 			sourceTree = "<group>";
@@ -219,6 +229,8 @@
 				19DE4AF24D333D517007477B /* Konashi.m in Sources */,
 				19DE40C744492E82D63CE676 /* KNS.m in Sources */,
 				19DE43D445F71F5D3C88FE56 /* KNSDigitalOut.m in Sources */,
+				19DE46C6EA885CF6B20A028C /* KNSDigitalIn.m in Sources */,
+				19DE45D40A51A612F6544966 /* KNSIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

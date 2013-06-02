@@ -10,7 +10,9 @@
 #import "KonashiKit.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *valueLabel;
 @property (strong, nonatomic) KNSDigitalOut *out;
+@property (strong, nonatomic) KNSDigitalIn *input;
 @end
 
 
@@ -22,6 +24,12 @@
 
     [[KNS sharedInstance] find:^{
         self.out = [[KNSDigitalOut alloc] initWithPin:kKNSPin_PIO1];
+        self.input = [[KNSDigitalIn alloc] initWithPin:kKNSPin_PIO0];
+
+        UILabel *label = self.valueLabel;
+        [self.input addListener:^(KNSHighLow value) {
+            label.text = (value == kKNSHigh) ? @"High" : @"Low";
+        }];
     }];
 }
 
