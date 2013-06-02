@@ -13,6 +13,6 @@ typedef void (^KNSDigitalInListenerBlock)(KNSHighLow value);
 
 @property (assign, readonly, nonatomic) KNSHighLow value;
 
-- (void)addListener:(KNSDigitalInListenerBlock)listner;
+- (void)addListener:(KNSDigitalInListenerBlock)listener;
 
 @end
