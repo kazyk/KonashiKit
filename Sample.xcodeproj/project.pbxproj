@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19DE40C744492E82D63CE676 /* KNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DE41CDE380D517B81A5EA1 /* KNS.m */; };
 		19DE41E994018829D5256824 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DE4DE078184C6A3CCCD7BC /* CoreGraphics.framework */; };
+		19DE43027505F3FD0D5BBF3E /* KNSPWMLEDOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4E25144F3C3C534A8965 /* KNSPWMLEDOut.m */; };
 		19DE4357C5892E2ACE405E11 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 19DE4540C01F335C48C18A2C /* Default.png */; };
 		19DE43D445F71F5D3C88FE56 /* KNSDigitalOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4DE8BA7A931810191F9F /* KNSDigitalOut.m */; };
 		19DE4458963D662967A9C1C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19DE406048996CB0FA6F8013 /* InfoPlist.strings */; };
@@ -39,6 +40,7 @@
 		19DE43C74C1A62852632819D /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
 		19DE43CB7F661919414FCCA1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		19DE44B1E0E601F2FEB95AA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19DE44E68C4B893BFB5654BD /* KNSPWMLEDOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPWMLEDOut.h; sourceTree = "<group>"; };
 		19DE451A0A8150B9283B5190 /* KNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNS.h; sourceTree = "<group>"; };
 		19DE4540C01F335C48C18A2C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		19DE45A5710E8DF90A878C26 /* Sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sample-Prefix.pch"; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		19DE4D5779AF8F546749078A /* KonashiKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiKit.h; sourceTree = "<group>"; };
 		19DE4DE078184C6A3CCCD7BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		19DE4DE8BA7A931810191F9F /* KNSDigitalOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSDigitalOut.m; sourceTree = "<group>"; };
+		19DE4E25144F3C3C534A8965 /* KNSPWMLEDOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSPWMLEDOut.m; sourceTree = "<group>"; };
 		19DE4F5EF0BAB9CF397F87C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		19DE4FC007E5B544910EE59F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +143,8 @@
 				19DE407401A1C0E68D0E64F8 /* KNSIO.h */,
 				19DE404868D7D922E7274C3E /* KNSAnalogueIn.m */,
 				19DE46ACC38C8290D2C982AF /* KNSAnalogueIn.h */,
+				19DE4E25144F3C3C534A8965 /* KNSPWMLEDOut.m */,
+				19DE44E68C4B893BFB5654BD /* KNSPWMLEDOut.h */,
 			);
 			path = KonashiKit;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				19DE46C6EA885CF6B20A028C /* KNSDigitalIn.m in Sources */,
 				19DE45D40A51A612F6544966 /* KNSIO.m in Sources */,
 				19DE4511511CBB54DFE7176C /* KNSAnalogueIn.m in Sources */,
+				19DE43027505F3FD0D5BBF3E /* KNSPWMLEDOut.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

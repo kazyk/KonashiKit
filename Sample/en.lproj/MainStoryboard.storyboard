@@ -74,10 +74,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" id="2I9-H7-6GH">
+                                <rect key="frame" x="83" y="367" width="154" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="led" destination="2" eventType="valueChanged" id="4YL-cZ-JWL"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="ledSlider" destination="2I9-H7-6GH" id="2EP-h9-GD7"/>
                         <outlet property="progress" destination="Kp1-XD-2jo" id="4fK-bp-uKt"/>
                         <outlet property="valueLabel" destination="brp-bT-PTI" id="6QH-fL-uGM"/>
                     </connections>
@@ -90,6 +98,7 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="ledSlider" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="progress" candidateClass="UIProgressView"/>
                 <relationship kind="outlet" name="valueLabel" candidateClass="UILabel"/>
             </relationships>

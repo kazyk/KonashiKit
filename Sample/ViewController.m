@@ -8,13 +8,16 @@
 
 #import "ViewController.h"
 #import "KonashiKit.h"
+#import "KNSPWMLEDOut.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *valueLabel;
 @property (strong, nonatomic) IBOutlet UIProgressView *progress;
+@property (strong, nonatomic) IBOutlet UISlider *ledSlider;
 @property (strong, nonatomic) KNSDigitalOut *out;
 @property (strong, nonatomic) KNSDigitalIn *input;
 @property (strong, nonatomic) KNSAnalogueIn *analogueIn;
+@property (strong, nonatomic) KNSPWMLEDOut *pwmLedOut;
 @end
 
 
@@ -27,7 +30,9 @@
     self.progress.progress = 0;
 
     [[KNS sharedInstance] find:^{
-        self.out = [[KNSDigitalOut alloc] initWithPin:kKNSPin_PIO1];
+        //self.out = [[KNSDigitalOut alloc] initWithPin:kKNSPin_PIO1];
+        self.pwmLedOut = [[KNSPWMLEDOut alloc] initWithPin:kKNSPin_PIO1];
+
         self.input = [[KNSDigitalIn alloc] initWithPin:kKNSPin_PIO0];
 
         UILabel *label = self.valueLabel;
@@ -51,6 +56,11 @@
 - (IBAction)low
 {
     [self.out write:kKNSLow];
+}
+
+- (IBAction)led
+{
+    [self.pwmLedOut setDutyRatio:(int)self.ledSlider.value];
 }
 
 @end
